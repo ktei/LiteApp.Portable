@@ -11,12 +11,11 @@ namespace LiteApp.Portable.Mvvm.Validation
                 throw new ArgumentNullException("attr must be type of RequiredFieldAttribute");
             string input = value as string;
             bool valid = true;
-            if (attribute.DisallowWhitespace)
+            if (!attribute.AllowWhiteSpace)
                 valid = !string.IsNullOrEmpty(input) && input.Trim().Length > 0;
             else
                 valid = !string.IsNullOrEmpty(input);
             return valid;
         }
-
     }
 }
