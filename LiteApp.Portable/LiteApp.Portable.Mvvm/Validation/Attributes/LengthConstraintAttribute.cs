@@ -2,6 +2,7 @@
 
 namespace LiteApp.Portable.Mvvm.Validation
 {
+    [RuleMapping(typeof(LengthConstraintRule))]
     public class LengthConstraintAttribute : ValidationAttribute
     {
         int _minimumLength = 1;

@@ -1,6 +1,7 @@
 ﻿
 namespace LiteApp.Portable.Mvvm.Validation
 {
+    [RuleMapping(typeof(RegularExpressionRule))]
     public class RegularExpressionAttribute : ValidationAttribute
     {
         public RegularExpressionAttribute(string pattern)

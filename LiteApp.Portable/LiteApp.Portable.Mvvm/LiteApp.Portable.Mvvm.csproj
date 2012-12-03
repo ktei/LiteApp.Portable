@@ -37,7 +37,9 @@
     <Compile Include="Validation\Attributes\LengthConstraintAttribute.cs" />
     <Compile Include="Validation\Attributes\RegularExpressionAttribute.cs" />
     <Compile Include="Validation\Attributes\RequiredFieldAttribute.cs" />
+    <Compile Include="Validation\Attributes\RuleMappingAttribute.cs" />
     <Compile Include="Validation\BaseValidator.cs" />
+    <Compile Include="Validation\StandardRuleLocator.cs" />
     <Compile Include="Validation\IRuleLocator.cs" />
     <Compile Include="Validation\IValidationRule.cs" />
     <Compile Include="Validation\IValidator.cs" />

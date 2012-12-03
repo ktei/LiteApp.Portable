@@ -1,6 +1,7 @@
 ﻿
 namespace LiteApp.Portable.Mvvm.Validation
 {
+    [RuleMapping(typeof(RequiredFieldRule))]
     public class RequiredFieldAttribute : ValidationAttribute
     {
         public override string DefaultErrorMessage
