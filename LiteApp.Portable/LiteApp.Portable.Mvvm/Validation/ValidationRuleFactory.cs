@@ -4,6 +4,11 @@ namespace LiteApp.Portable.Mvvm.Validation
 {
     public static class ValidationRuleFactory
     {
+        static ValidationRuleFactory()
+        {
+            RuleLocator = new StandardRuleLocator();
+        }
+
         public static IRuleLocator RuleLocator { get; set; }
 
         public static IValidationRule GetRule(ValidationAttribute attr)
